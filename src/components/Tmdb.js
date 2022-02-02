@@ -17,43 +17,45 @@ export default {
             {
                 slug: 'originals',
                 name: 'Originals Netflix',
-                items: ``
+                items: await getResponse(`/discover/tv?sort_by=popularity.desc&with_networks=213&api_key=${API_KEY}`)
             },
             {
                 slug: 'trending',
                 name: 'Trending Topics',
-                items: []
+                items: await getResponse(`/trending/tv/week?api_key=${API_KEY}`)
             },
             {
                 slug: 'action&adventure',
                 name: 'Action & Adventure',
-                items: []
+                items: await getResponse(`/discover/tv?sort_by=popularity.desc&with_genres=10759&api_key=${API_KEY}`)
             },
             {
                 slug: 'sci-fi&fantasy',
                 name: 'Sci-Fi & Fantasy',
-                items: []
+                items: await getResponse(`/discover/tv?sort_by=popularity.desc&with_genres=10765&api_key=${API_KEY}`)
             },
             {
                 slug: 'animation',
                 name: 'Animation',
-                items: []
+                items: await getResponse(`/discover/tv?sort_by=popularity.desc&with_genres=16&api_key=${API_KEY}`)
             },
             {
                 slug: 'comedy',
                 name: 'Comedy',
-                items: []
+                items: await getResponse(`/discover/tv?sort_by=popularity.desc&with_genres=35&api_key=${API_KEY}`)
             },
             {
                 slug: 'documentary',
                 name: 'Documentary',
-                items: []
+                items: await getResponse(`/discover/tv?sort_by=popularity.desc&with_genres=99&api_key=${API_KEY}`)
             },
             {
                 slug: 'reality',
                 name: 'Reality',
-                items: []
+                items: await getResponse(`/discover/tv?sort_by=popularity.desc&with_genres=10764&api_key=${API_KEY}`)
             }
-        ]
+        ];
+
+        return list;
     }
 };
