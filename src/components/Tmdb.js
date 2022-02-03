@@ -25,14 +25,14 @@ export default {
                 items: await getResponse(`/trending/tv/week?api_key=${API_KEY}`)
             },
             {
-                slug: 'action&adventure',
-                name: 'Action & Adventure',
-                items: await getResponse(`/discover/tv?sort_by=popularity.desc&with_genres=10759&api_key=${API_KEY}`)
+                slug: 'Mystery',
+                name: 'Mystery',
+                items: await getResponse(`/discover/tv?sort_by=popularity.desc&with_genres=9648&api_key=${API_KEY}`)
             },
             {
-                slug: 'sci-fi&fantasy',
-                name: 'Sci-Fi & Fantasy',
-                items: await getResponse(`/discover/tv?sort_by=popularity.desc&with_genres=10765&api_key=${API_KEY}`)
+                slug: 'kids',
+                name: 'Kids',
+                items: await getResponse(`/discover/tv?sort_by=popularity.desc&with_genres=10762&api_key=${API_KEY}`)
             },
             {
                 slug: 'animation',

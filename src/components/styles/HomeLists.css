@@ -1,0 +1,27 @@
+.HomeLists--list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 30px 50px;
+
+}
+.HomeLists--list_name{
+    font-family: 'Netflix Sans';
+    font-size: 1.3em;
+    margin: 15px 0;
+}
+.HomeLists--list-banners{
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+}
+.HomeLists--list-banners img{
+    width: 160px;
+    transform: scale(.95);
+    transition: 250ms ease;
+}
+.HomeLists--list-banners img:hover{
+    transform: scale(1.15);
+    z-index: 10;
+}
