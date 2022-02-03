@@ -10,6 +10,7 @@
     font-family: 'Netflix Sans';
     font-size: 1.3em;
     margin: 15px 0;
+    cursor: default;
 }
 .HomeLists--list-banners{
     display: flex;
@@ -17,9 +18,10 @@
     width: max-content;
 }
 .HomeLists--list-banners img{
-    width: 160px;
+    width: 2.5%;
     transform: scale(.95);
     transition: 250ms ease;
+    cursor: pointer;
 }
 .HomeLists--list-banners img:hover{
     transform: scale(1.15);

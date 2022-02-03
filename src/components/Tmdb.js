@@ -57,5 +57,11 @@ export default {
         ];
 
         return list;
+    },
+
+    getMainSerie: async (id) => {
+        let mainSerie = await getResponse(`/tv/${id}?api_key=${API_KEY}`);
+
+        return mainSerie;
     }
 };

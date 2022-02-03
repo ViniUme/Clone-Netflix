@@ -1,0 +1,27 @@
+.MainSerie--section-root{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Netflix Sans';
+}
+.MainSerie--info-container{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.MainSerie--title{
+    font-size: 3em;
+}
+.MainSerie--infos{
+    display: flex;
+    margin: 15px 0;
+}
+.MainSerie--score,
+.MainSerie--date,
+.MainSerie--temp{
+    margin: 0 20px;
+}
