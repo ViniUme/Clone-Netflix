@@ -23,5 +23,24 @@
 .MainSerie--score,
 .MainSerie--date,
 .MainSerie--temp{
-    margin: 0 20px;
+    margin-right: 10px;
+}
+.MainSerie--score{
+    color: #2cff61;
+}
+.MainSerie--buttons, .MainSerie--input-play , .MainSerie--input-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Netflix Sans';
+}
+.MainSerie--input-play , .MainSerie--input-list{
+    border: none;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.MainSerie--input-play{
+    background-color: #ff1515;
+    color: white;
+    margin-right: 10px;
 }

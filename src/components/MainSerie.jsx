@@ -1,5 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import PlaylistAddIcon from '@mui/icons-material/PlaylistAdd';
 import './styles/MainSerie.css';
 
 export default ({info}) => {
@@ -32,14 +34,15 @@ export default ({info}) => {
                 </div>
                 <div className="MainSerie--infos">
 
-                    <div className="MainSerie--score">{info.vote_average}</div>
+                    <div className="MainSerie--score">{info.vote_average} Score</div>
                     <div className="MainSerie--date">{airDate.getFullYear()}</div>
                     <div className="MainSerie--temp">{Season(info.number_of_seasons)}</div>
 
                 </div>
 
                 <div className="MainSerie--buttons">
-
+                    <button className="MainSerie--input-play"><PlayArrowIcon />Play</button>
+                    <button className="MainSerie--input-list"><PlaylistAddIcon />Add to my list</button>
                 </div>
 
             </div>
