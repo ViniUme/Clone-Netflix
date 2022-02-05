@@ -1,0 +1,21 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: 300ms ease;
+}
+header.black{
+    background-color: #050505;
+}
+.Header--logo , .Header--profile{
+    height: 5vh;
+    margin: 0 10vw;
+    border-radius: 5px;
+}

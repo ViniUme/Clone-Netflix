@@ -9,6 +9,7 @@ function App() {
 
   const [homeLists , setHomeLists] = useState(null);
   const [mainSerie , setMainSerie] = useState(null);
+  const [headerColor , setHeaderColor] = useState()
   
   useEffect(() => {
     const LoadAll = async () => {
@@ -24,10 +25,19 @@ function App() {
     LoadAll()
   }, []);
 
+  document.addEventListener('scroll' , () => {
+    if(window.scrollY > 50){
+      setHeaderColor('black');
+    }
+    else{
+      setHeaderColor('');
+    }
+  });
+
   return (
     <div className="App">
 
-      <Header />
+      <Header color={headerColor} />
 
       {mainSerie &&
         <MainSerie info={mainSerie} />
