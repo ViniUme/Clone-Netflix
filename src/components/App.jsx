@@ -1,5 +1,6 @@
 import React, {useState , useEffect} from 'react';
 import Tmdb from './Tmdb';
+import Header from './Header'
 import HomeLists from './HomeLists';
 import MainSerie from './MainSerie';
 import './styles/App.css'
@@ -25,6 +26,8 @@ function App() {
 
   return (
     <div className="App">
+
+      <Header />
 
       {mainSerie &&
         <MainSerie info={mainSerie} />

@@ -36,11 +36,23 @@
 }
 .MainSerie--input-play , .MainSerie--input-list{
     border: none;
+    border-radius: 4px;
     padding: 5px 10px;
     font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 250ms ease;
 }
 .MainSerie--input-play{
     background-color: #ff1515;
-    color: white;
     margin-right: 10px;
+}
+.MainSerie--input-play:hover{
+    background-color: #ac0202;
+}
+.MainSerie--input-list{
+    background-color: #585858;
+}
+.MainSerie--input-list:hover{
+    background-color: #2b2b2b;
 }
