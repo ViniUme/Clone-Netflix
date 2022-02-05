@@ -19,3 +19,17 @@ header.black{
     margin: 0 10vw;
     border-radius: 5px;
 }
+.arrow-left{
+    transform: scale(2.5);
+    width: 15px;
+    height: 103.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    background: #363842;
+    filter: opacity(0);
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}

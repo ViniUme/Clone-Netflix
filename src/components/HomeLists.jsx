@@ -1,12 +1,22 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
-import './styles/HomeLists.css'
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+import './styles/HomeLists.css';
 
 export default (props) => {
 
+    const ArrowLeft = () => {
+        console.log('aaaaa');
+    }
+
     return(
+        <>
+        <div className="HomeLists--list_name">{props.list_name}</div>
         <section className="HomeLists--list">
-            <div className="HomeLists--list_name">{props.list_name}</div>
+
+            <div className="arrow-left" onClick={ArrowLeft()} >
+                <NavigateBeforeIcon/>
+            </div>
 
             <section className="HomeLists--list-banners">
                 {props.info.results && props.info.results.map((item , key) => {
@@ -15,5 +25,6 @@ export default (props) => {
             </section>
 
         </section>
+        </>
     );
 }
