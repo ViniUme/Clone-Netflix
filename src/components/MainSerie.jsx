@@ -18,11 +18,10 @@ export default ({info}) => {
         }
     }
 
-    console.log(info);
     return(
         <section className="MainSerie--section-root" style={{
-            background: `linear-gradient(0deg, #050505 10%, transparent 90%),
-            linear-gradient(90deg, #050505 30%, transparent 70%),
+            background: `linear-gradient(0deg, #141414 10%, transparent 90%),
+            linear-gradient(90deg, #141414 30%, transparent 70%),
             url(https://image.tmdb.org/t/p/original${info.backdrop_path})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover'

@@ -12,7 +12,7 @@ header{
     transition: 300ms ease;
 }
 header.black{
-    background-color: #050505;
+    background-color: 141414;
 }
 .Header--logo , .Header--profile{
     height: 5vh;

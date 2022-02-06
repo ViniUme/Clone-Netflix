@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
 
-      <Header color={headerColor} />
+      <Header color={headerColor}/>
 
       {mainSerie &&
         <MainSerie info={mainSerie} />
