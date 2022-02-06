@@ -6,7 +6,6 @@ import './styles/HomeLists.css';
 
 export default (props) => {
 
-    let aaa = (props.info.results.length * 146 + 50) - ((window.innerWidth - 53));
     const [marginList , setMarginList] = useState(0);
 
     return(
